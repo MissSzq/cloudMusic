@@ -1,0 +1,92 @@
+/*header样式*/
+#wrap{
+    width: 1020px;
+    height: 670px;
+    margin:0 auto;
+}
+#header{
+    width: 100%;
+    height: 50px;
+    background: #212124 url("../images/line.png") no-repeat 0 47px;
+}
+#header .logo{
+    float: left;
+    width: 160px;
+    height: 45px;
+    margin-left:10px;
+    background: url("../images/logo.png") 0 -10px;
+}
+/*search*/
+#header .searchBox {
+    position:relative;
+    float: left;
+    width: 220px;
+    height: 22px;
+    margin: 14px 130px;
+}
+.searchBox .search{
+     width: 100%;
+     height: 100%;
+     background:  #151517;
+     border:none;
+     outline: none;
+     text-indent:8px;
+     color:#ddd;
+     border-radius: 11px;
+     font-size: 14px;
+ }
+.searchBox i{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    color:#656567;
+    cursor: pointer;
+}
+.searchBox i:hover{
+    color:white;
+}
+/*option*/
+#header .option{
+    float: right;
+    width: 360px;
+    height: 100%;
+}
+.option .idImg{
+    float: left;
+    height: 25px;
+    width: 110px;
+    margin:12px 0;
+}
+.option .idImg img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.option .idImg a{
+    color:#ADAFB2;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.option i{
+    font-size: 18px;
+    color:#ADAFB2;
+    padding-right:12px;
+    cursor: pointer;
+}
+.option .optionLeft,.optionRight{
+    height:25px;
+    margin:12px 0;
+    line-height: 25px;
+}
+.option .optionLeft{
+    float: left;
+    border-right:1px solid #000;
+}
+.option .optionRight{
+    float: right;
+}
+.option i:hover{
+    color:white;
+}
+

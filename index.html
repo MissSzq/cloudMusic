@@ -1,0 +1,235 @@
+<!doctype html><!--声明HTML文件-->
+<html lang="zh-CN" ondragstart="return false"><!--网页的开始-->
+ <head><!--浏览器的信息-->
+  <meta charset="UTF-8"><!--设置编码格式为国际编码格式-->
+  <meta name="Author" content="Sunny">
+  <meta name="Keywords" content=""><!--为搜索引擎提供关键字列表-->
+  <meta name="Description" content=""><!--对网页的描述，给搜索引擎抓取-->
+  <title>网易云音乐</title>
+     <link rel="stylesheet" href="http:////at.alicdn.com/t/font_511576_wf9nksy1nl6av2t9.css">
+     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/nav.css">
+     <link rel="stylesheet" href="css/container.css">
+     <link rel="stylesheet" href="css/play.css">
+
+     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+     <script src="js/jquery.mousewheel.js"></script>
+     <script src="js/index.js"></script>
+ </head>
+ <body><!--可视化区域-->
+	<div id="wrap">
+        <!--header-->
+        <div id="header" class="clearfix">
+            <!--logo-->
+            <h1 class="logo"></h1>
+            <!--search-->
+            <div class="searchBox">
+                <input class="search" type="text" placeholder="搜索音乐，视频，歌词，电台">
+                <i class="iconfont icon-sousuo"></i>
+            </div>
+            <!--option-->
+            <div class="option clearfix">
+                <div class="idImg">
+                    <img src="images/idimg.png" height="182" width="182"/>
+                    <a href="#">佑先shen</a>
+                </div>
+                <div class="optionLeft">
+                    <i class="iconfont icon-pifu"></i>
+                    <i class="iconfont icon-xinxi"></i>
+                    <i class="iconfont icon-shezhi"></i>
+                </div>
+                <div class="optionRight">
+                    <i class="iconfont icon-suoxiao1"></i>
+                    <i class="iconfont icon-suoxiao"></i>
+                    <i class="iconfont icon-zuidahua"></i>
+                    <i class="iconfont icon-cha"></i>
+                </div>
+            </div>
+        </div>
+        <!--container-->
+        <div id="container">
+            <div class="containerList clearfix">
+                <!--首页左侧列表-->
+                <div id="sidebar">
+                    <!--歌曲选择列表-->
+                    <div class="sidebarTitle">
+                        <div class="sidebarList1">
+                            <p>推荐</p>
+                            <ul>
+                                <li><i class="iconfont icon-yinle"></i> 发现音乐</li>
+                                <li><i class="iconfont icon-xinhao"></i> 私人FM</li>
+                                <li><i class="iconfont icon-shipin"></i> MV</li>
+                                <li><i class="iconfont icon-pengyou"></i> 朋友</li>
+                            </ul>
+                        </div>
+                        <div class="sidebarList2">
+                            <p>我的音乐</p>
+                            <ul>
+                                <li><i class="iconfont icon-iconfontbiaozhunmoban01"></i> 本地音乐</li>
+                                <li><i class="iconfont icon-xiazai"></i> 下载管理</li>
+                                <li><i class="iconfont icon-yun"></i> 我的音乐云盘</li>
+                                <li><i class="iconfont icon-shoucang"></i> 我的收藏</li>
+                            </ul>
+                        </div>
+                        <div class="sidebarList3">
+                            <p>创建的歌单</p>
+                            <ul>
+                                <li><i class="iconfont icon-xin"></i> 我喜欢的音乐</li>
+                                <li><i class="iconfont icon-gedan"></i> 民谣总能让你伤感</li>
+                                <li><i class="iconfont icon-gedan"></i> 感受自然</li>
+                                <li><i class="iconfont icon-gedan"></i> 灵魂深处的呼唤</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--当前播放歌曲-->
+                    <div class="sidebarFooter clearfix">
+                        <img src="images/face.png" height="60" width="60"/>
+                        <i class="iconfont icon-kuoda"></i>
+                        <div class="singBox">
+                            <p class="songname">关于南方破碎的理想 </p>
+                            <p class="singername">老四叔 </p>
+                        </div>
+                        <div class="share">
+                            <i class="iconfont icon-xin1"></i>
+                            <i class="iconfont icon-fenxiang"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--首页右侧内容-->
+                <div id="main">
+                    <div class="content">
+                        <!--首页歌单和个人信息-->
+                        <div class="contentMessage clearfix">
+                            <!--首页头像-->
+                            <div>
+                                <img src="images/bg.jpg" height="200" width="200"/>
+                            </div>
+                            <!--首页个人信息-->
+                            <div class="infoBox">
+                                <div class="infoTitle clearfix">
+                                    <span>歌单</span>
+                                    <h2>我喜欢的音乐</h2>
+                                </div>
+                                <div class="infoMiddle clearfix">
+                                    <img src="images/idimg.png" height="182" width="182"/>
+                                    <span>佑先shen</span>
+                                    <span>2016-04-27创建</span>
+                                </div>
+                                <div class="infoFooter">
+                                    <a href="#">播放全部</a>
+                                    <a href="#">收藏(<span>0</span>)</a>
+                                    <a href="#">分享</a>
+                                    <a href="#" id="download">下载当前</a>
+                                </div>
+                            </div>
+                            <!--歌曲列表-->
+                            <div class="infoBox2">
+                                <button>歌曲列表</button>
+                                <button>评论(<psan>0</psan>)</button>
+                                <button>收藏者</button>
+                            </div>
+                        </div>
+                        <!--歌单列表-->
+                        <div class="contentBody">
+                            <!--歌曲列表-->
+                            <table border="0">
+                                <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>音乐标题</td>
+                                    <td>歌手</td>
+                                    <td>专辑</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <!--<tr>-->
+                                    <!--<td class="index">01</td>-->
+                                    <!--<td class="singsname">温柔</td>-->
+                                    <!--<td class="singsername">余弢</td>-->
+                                    <!--<td class="albumname">自定义</td>-->
+                                <!--</tr>-->
+                                </tbody>
+                            </table>
+                            <!--page-->
+                            <div class="page">
+                                <div class="pageBox clearfix">
+                                    <button id="firstPage">首页</button>
+                                    <button id="prevPage">上一页</button>
+                                    <button id="nextPage">下一页</button>
+                                    <button id="lastPage">末页</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--滚动条-->
+                    <div class="scrollbar">
+                        <div class="block"></div>
+                    </div>
+                </div>
+            </div>
+            <!--歌词详情-->
+            <div class="contentDetails clearfix">
+                <div class="cd">
+                    <div class="cdbg">
+                        <img src="images/bg.jpg" height="300" width="300"/>
+                    </div>
+                </div>
+                <!--歌词-->
+                <div class="lyric">
+                    <div class="lyricTop">
+                        <h2>关于南方破碎的理想</h2>
+                        <p>专辑: <span class="album">关于南方破碎的理想</span></p>
+                        <p>歌手: <span class="singername">老四叔</span></p>
+                        <i class="iconfont icon-suoxiao2"></i>
+                    </div>
+                    <div class="lyricBottom">
+                        <ul id="lyricList">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--首页底部播放栏-->
+        <div id="play" class="clearfix">
+            <!--播放按钮-->
+            <div class="key clearfix">
+                <div class="prev"></div>
+                <div class="boFang playing"></div>
+                <div class="next"></div>
+            </div>
+            <!--播放精度条和声音条-->
+            <div class="control">
+                <!--播放进度条-->
+                <div class="progress clearfix">
+                    <div class="nowTime">00:00</div>
+                    <div class="progressBar">
+                        <div class="red"></div>
+                        <div class="bar"><div></div></div>
+                    </div>
+                    <div class="maxTime">04:49</div>
+                    <!--声音条-->
+                    <div class="volume">
+                        <i class="iconfont icon-iconfontdaohanggonggao"></i>
+                        <div class="volumeBar">
+                            <div class="red"></div>
+                            <div class="bar"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--播放功能-->
+            <div class="playFun">
+                <div class="playMode">
+                    <i class="iconfont icon-suiji"></i>
+                    <i class="iconfont icon-geci"></i>
+                    <i class="iconfont icon-bofangliebiao"></i>
+                </div>
+            </div>
+        </div>
+        <!--音频播放-->
+        <audio type="audio/mp4" src="http://ws.stream.qqmusic.qq.com/107609343.m4a?fromtag=46" ></audio>
+        <div style="display: none" id="FMlyric"></div>
+    </div>
+ </body>
+</html><!--网页的结束-->

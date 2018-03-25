@@ -1,0 +1,333 @@
+/*container*/
+#container{
+    position: relative;
+    width: 100%;
+    height: 570px;
+    background: #16181C;
+}
+/*首页左侧列表栏*/
+#container .containerList{
+    position: absolute;
+    z-index: 3;
+}
+.containerList #sidebar{
+    float: left;
+    width: 200px;
+    height: 570px;
+    border-right: 1px solid #23262C;
+}
+#sidebar .sidebarTitle{
+    width: 180px;
+    height: 495px;
+    padding:10px;
+    border-bottom: 1px solid #23262C;
+}
+.sidebarTitle .sidebarList1,.sidebarList2,.sidebarList3{
+    margin-top:10px;
+}
+.sidebarTitle p{
+    color:#7C7C7C;
+}
+.sidebarTitle ul li{
+    margin-top: 15px;
+    text-indent: 10px;
+    cursor: pointer;
+    color:#ADAFB2;
+}
+.sidebarTitle ul li:hover{
+    color:white;
+}
+/*列表底部正在播放歌曲名称*/
+#container .sidebarFooter{
+    position: relative;
+    height: 45px;
+    padding:5px;
+}
+.sidebarFooter:hover .icon-kuoda{
+    display: block;
+}
+.sidebarFooter img{
+    float: left;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.sidebarFooter .icon-kuoda{
+    position: absolute;
+    display: none;
+    top:5px;
+    left:5px;
+    color:white;
+    font-size: 45px;
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.sidebarFooter .singBox{
+    float: left;
+    width: 110px;
+    padding:5px;
+    font-size: 14px;
+}
+.sidebarFooter p{
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sidebarFooter .singname{
+    color: #DCDDE4;
+}
+.sidebarFooter .singername:hover{
+    color:white;
+}
+.sidebarFooter .share{
+    float: right;
+    width: 25px;
+    padding:5px 0;
+}
+.sidebarFooter .share i{
+    cursor: pointer;
+}
+.sidebarFooter i:nth-child(1){
+    color:#B82525;
+}
+/*右侧内容栏*/
+#main{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width:819px;
+    height: 570px;
+}
+#main .content{
+    position: absolute;
+    top:0;
+    left:0;
+}
+    /*首页歌单和个人信息*/
+#main .contentMessage{
+    position: relative;
+    width: 759px;
+    height: 255px;
+    padding: 25px;
+    border-bottom:1px solid #E03F40;
+}
+.contentMessage>div{
+    float: left;
+    padding-right: 20px;
+}
+.contentMessage .infoBox{
+    float: left;
+    width: 500px;
+}
+.infoBox .infoTitle span{
+    float: left;
+    margin:6px 5px 5px 0;
+    padding:0 5px;
+    color:#E03F40;
+    border:1px solid #E03F40;
+    border-radius: 5px;
+}
+.infoBox .infoTitle h2{
+    font-size:24px;
+    color:white;
+}
+.infoBox .infoMiddle{
+    margin:20px 0;
+}
+.infoBox .infoMiddle img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.infoBox .infoMiddle span{
+    padding-left:5px;
+    vertical-align: middle;
+}
+.infoBox .infoMiddle span:nth-child(3){
+    font-size:12px;
+    color:#5F5F63;
+}
+.infoBox .infoFooter a{
+    margin-right: 10px;
+    color:#5F5F63;
+    padding:3px 10px;
+    background: #25272B;
+    border-radius: 5px;
+}
+/*歌曲列表*/
+.infoBox2{
+    position: absolute;
+    left:50px;
+    bottom:0;
+}
+.infoBox2 button{
+    padding:5px 15px;
+    border:none;
+    background:#25272B;
+    color:#DCDDE4;
+    cursor: pointer;
+}
+.infoBox2 button:nth-child(1){
+    background: #B82525;
+}
+/*歌曲列表*/
+.contentBody {
+    width: 809px;
+}
+table{
+    width:100%;
+    text-align: center;
+    table-layout:fixed;
+}
+table thead td{
+    border:1px solid #23262C;
+}
+td{
+    color:#828385;
+    height: 30px;
+    cursor: pointer;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+tr td:nth-child(1){
+    width: 60px;
+}
+tr td:nth-child(2){
+    width: 330px;
+}
+tr td:nth-child(3){
+    width: 150px;
+}
+tr td:nth-child(4){
+    width: 265px;
+}
+tbody tr:nth-child(even){
+    background: #1A1C20;
+}
+tbody tr:hover{
+    background: #232529;
+}
+tbody tr td.singsname{
+    color:#fff;
+}
+/*滚动条*/
+#main .scrollbar{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 10px;
+    height: 570px;
+}
+.scrollbar .block{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 10px;
+    height: 10px;
+    border-radius:5px;
+    background: #2C2E32;;
+}
+/*歌曲page*/
+.page{
+    border-top:1px solid #333;
+}
+.page .pageBox{
+    width:200px;
+    margin:2px auto;
+}
+.page .pageBox button{
+    float:left;
+    margin-right:5px;
+    padding: 2px 5px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius:5px;
+    background:#202226;
+}
+/*歌词详情*/
+.contentDetails{
+    position: absolute;
+    left:0;
+    top:0;
+    opacity:0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #17191C;
+}
+.contentDetails .cd{
+    float: left;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    margin:70px 0 0 70px;
+    background: #333;
+    animation: move 15s linear infinite;
+}
+@keyframes move {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.cdbg{
+    position: relative;
+    margin: 5px;
+    width: 320px;
+    height: 320px;
+    border-radius:50%;
+    background: url("../images/singlecover.png") center/cover;
+}
+.cdbg img{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+.contentDetails .lyric{
+    overflow: hidden;
+    margin: 50px 20px;
+    float: right;
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+}
+.lyric .lyricTop{
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+.lyricTop h2{
+    font-size: 24px;
+    color:#D5D5D6;
+}
+.lyricTop span{
+    color: #305783;
+}
+.lyricTop i{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 3px 10px;
+    background: #26292E;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.lyricTop i:hover{
+    color:white;
+}
+.lyric .lyricBottom{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+    border-right:1px solid white;
+}
+#lyricList li{
+    height:23px;
+}

@@ -1,0 +1,167 @@
+/*播放条play*/
+#play{
+    width: 1020px;
+    height: 50px;
+    background: #222225;
+}
+#play .key{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+.key div{
+    position: absolute;
+    float: left;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.key div.prev{
+    left: 36px;
+    top: 12px;
+    background: url("../images/playbar_8.png") no-repeat -1px -131px;
+}
+.key div.prev:hover{
+    background: url("../images/playbar_8.png") no-repeat -31px -131px;
+}
+.key div.zanTing,div.boFang{
+    top: 7px;
+    left: 82px;
+    width: 35px;
+    height: 35px;
+}
+.key div.boFang{
+    background: url("../images/playbar_8.png") no-repeat -1px -205px;
+}
+.key div.boFang:hover{
+    background: url("../images/playbar_8.png") no-repeat -41px -205px;
+}
+.key div.zanTing{
+    background: url("../images/playbar_8.png") no-repeat -1px -166px;
+}
+.key div.zanTing:hover{
+    background: url("../images/playbar_8.png") no-repeat -41px -166px;
+}
+
+.key div.next{
+    top: 12px;
+    left:137px;
+     background: url("../images/playbar_8.png") no-repeat -81px -131px;
+ }
+.key div.next:hover{
+    background: url("../images/playbar_8.png") no-repeat -111px -131px;
+}
+/*播放进度条*/
+.control{
+    float: left;
+    width: 690px;
+    height:100%;
+}
+.control .progress .progressBar{
+    position: relative;
+    float: left;
+    margin: 23px 5px;
+    width: 420px;
+    height: 3px;
+    background: #000;
+    border-radius:5px;
+}
+.progress .nowTime,.maxTime{
+    float: left;
+    margin: 15px 10px;
+    color:#A7B9E4;
+}
+/*时间进度条和声音公共属性*/
+.progressBar .red{
+    position: absolute;
+    top: 0;
+    left:0;
+    height:3px;
+    width: 0;
+    background: red;
+}
+.progressBar .bar{
+    position: absolute;
+    left: -7px;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    border-radius:50%;
+    background: #FEFEFE;
+}
+.progressBar .bar>div{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    background: red;
+    border-radius:50%;
+}
+/*声音条*/
+.control .volume{
+    float: left;
+}
+.volume>i{
+    float: left;
+    margin:17px 10px;
+    color:#79797B;
+}
+.volume .volumeBar{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 3px;
+    margin: 23px 5px;
+    background: #000;
+    border-radius:10px;
+}
+.volumeBar .red{
+    position: absolute;
+    top: 0;
+    left:0;
+    height:3px;
+    width: 100px;
+    background: red;
+}
+.volumeBar .bar{
+    position: absolute;
+    left: 94px;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius:50%;
+    background: #FEFEFE;
+}
+.volumeBar .bar>div{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    background: red;
+    border-radius:50%;
+}
+/*播放功能*/
+.playFun{
+    float: left;
+}
+.playFun .playMode{
+    height: 22px;
+    margin:14px 0;
+}
+.playMode i{
+    padding:0 10px;
+    font-size:20px;
+    cursor: pointer;
+}
+.playMode i:hover{
+    color:#CFA6B3;
+}
+
+
+
